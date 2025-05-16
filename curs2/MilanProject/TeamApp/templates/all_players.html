@@ -7,16 +7,17 @@
 </head>
 <body>
     <h1>all_players</h1>
+
     <ol>
-   
-    {% for pl in players   %}
+    
+    {% for pl in players  %}
         <li>
-        <p>{{pl.name}} </p>
-        <img src="{{pl.image}}" alt="">
-       
+            <p>{{pl.name}} {{pl.image.url}}</p>
+            <img src="{{pl.image.url}}" alt="">
         </li>
+
     {% endfor %}
-     </ol>
-     
+
+    </ol>
 </body>
 </html>
